@@ -6,6 +6,12 @@ const config: Config = {
   content: ["./src/**/*.{html,js,svelte,ts}"],
   safelist: ["dark"],
   theme: {
+    letterSpacing: {
+      "1": "0em",
+      "2": "0.025em",
+      "3": "0.05em",
+      "4": "0.1em",
+    },
     container: {
       center: true,
       padding: "2rem",
@@ -53,6 +59,10 @@ const config: Config = {
         lg: "var(--radius)",
         md: "calc(var(--radius) - 2px)",
         sm: "calc(var(--radius) - 4px)",
+      },
+      boxShadow: {
+        "box-focus": "0 0 0 2px #111010, 0 0 0 4px white",
+        "input-focus": "0 0 0 2px #111010, 0 0 0 4px white",
       },
       animation: {
         shimmer: "shimmer 8s infinite",
