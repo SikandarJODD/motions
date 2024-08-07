@@ -20,6 +20,9 @@ const config: Config = {
       },
     },
     extend: {
+      height: {
+        dvh: "100dvh",
+      },
       colors: {
         border: "hsl(var(--border) / <alpha-value>)",
         input: "hsl(var(--input) / <alpha-value>)",
