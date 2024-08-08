@@ -6,6 +6,6 @@
 </script>
 
 <ModeWatcher />
-<Navbar />
+<!-- <Navbar /> -->
 <slot></slot>
 <!-- <Footer /> -->

@@ -81,7 +81,7 @@ const config: Config = {
         },
       },
       fontFamily: {
-        sans: [...fontFamily.sans],
+        sans: ["Inter var", ...fontFamily.sans],
       },
     },
   },

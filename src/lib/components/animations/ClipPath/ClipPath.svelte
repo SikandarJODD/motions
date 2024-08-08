@@ -34,7 +34,7 @@
     <!-- svelte-ignore a11y-no-static-element-interactions -->
     <div
       bind:this={containerRef}
-      class="relative flex h-48 w-[500px] flex-col items-center justify-center p-8"
+      class="relative flex h-48 w-full lg:w-[500px] flex-col items-center justify-center p-8"
       on:mousemove={onMouseOver}
       on:mouseleave={onMouseLeave}
     >
