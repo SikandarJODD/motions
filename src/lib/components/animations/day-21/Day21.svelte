@@ -32,11 +32,11 @@
     Cycling: false,
     Gymnastics: false,
     Skiing: false,
-    Snowboarding: false,
+    Snowboarding: true,
     Skateboarding: false,
     Surfing: false,
     Rowing: false,
-    Sailing: false,
+    Sailing: true,
     Fencing: false,
     Judo: true,
     Karate: false,
@@ -90,7 +90,7 @@
               class="mt-4 flex w-full flex-wrap gap-2"
               use:motion
             >
-              <AnimateSharedLayout>
+              <AnimateSharedLayout type='crossfade'>
                 <!-- <AnimatePresence let:item list={[{ key: 'a'}]}> -->
                 {#each Object.entries(sportsObject).filter(([key, value]) => !filter || value) as item, i}
                   <Motion
@@ -126,6 +126,7 @@
                           </Motion>
                           {#if item[1]}
                             <Motion
+                              layout
                               initial={{ scale: 0 }}
                               animate={{ scale: 1 }}
                               let:motion
