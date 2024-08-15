@@ -14,6 +14,11 @@
       icon: Sparkle,
     },
     {
+      name: "Motions",
+      href: "/motions",
+      icon: Sparkle,
+    },
+    {
       name: "CSS",
       href: "/",
       icon: MousePointerClick,
@@ -27,7 +32,7 @@
   let isMobileMenuOpen = false;
 </script>
 
-<nav class="bg-background sticky top-0 backdrop-blur-md z-50">
+<nav class="bg-background/20 sticky top-0 backdrop-blur-lg z-[1000]">
   <div class="mx-auto max-w-7xl px-2 sm:px-6 lg:px-8">
     <div class="relative flex h-16 items-center justify-between">
       <div class="absolute inset-y-0 left-0 flex items-center sm:hidden">

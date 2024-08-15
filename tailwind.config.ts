@@ -24,7 +24,9 @@ const config: Config = {
         dvh: "100dvh",
       },
       colors: {
-        border: "hsl(var(--border) / <alpha-value>)",
+        border: "#CFCFCF",
+        box: "#262626",
+        // border: "hsl(var(--border) / <alpha-value>)",
         input: "hsl(var(--input) / <alpha-value>)",
         ring: "hsl(var(--ring) / <alpha-value>)",
         background: "hsl(var(--background) / <alpha-value>)",
@@ -44,6 +46,8 @@ const config: Config = {
         muted: {
           DEFAULT: "hsl(var(--muted) / <alpha-value>)",
           foreground: "hsl(var(--muted-foreground) / <alpha-value>)",
+          2: "#A3A3A3",
+          3: "#d4d4d4",
         },
         accent: {
           DEFAULT: "hsl(var(--accent) / <alpha-value>)",
@@ -69,6 +73,7 @@ const config: Config = {
       },
       animation: {
         shimmer: "shimmer 8s infinite",
+        "badge-circle-expand": "badge-circle-expand 1s infinite linear",
       },
       keyframes: {
         shimmer: {
@@ -77,6 +82,16 @@ const config: Config = {
           },
           "30%, 60%": {
             "background-position": "calc(100% + var(--shimmer-width)) 0",
+          },
+        },
+        "badge-circle-expand": {
+          from: {
+            transform: "scale(1)",
+            opacity: "1",
+          },
+          to: {
+            transform: "scale(2)",
+            opacity: "0",
           },
         },
       },
