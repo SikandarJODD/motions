@@ -1,8 +1,8 @@
 <script>
   import Wrapper from "$lib/components/animations/Wrapper.svelte";
-  import Day9Css from "$lib/css/day9/Day9CSS.svelte";
+  import Day7Css from "$lib/css/day7/Day7CSS.svelte";
 </script>
 
-<Wrapper class="bg-background text-white">
-  <Day9Css />
+<Wrapper class="bg-background ">
+  <Day7Css />
 </Wrapper>
