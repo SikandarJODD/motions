@@ -6,7 +6,7 @@
 
 <div
   class={cn(
-    "relative flex h-dvh w-full flex-col items-center justify-center bg-white text-black",
+    "relative flex min-h-dvh w-full flex-col items-center justify-center bg-white text-black",
     className
   )}
   {...$$restProps}
